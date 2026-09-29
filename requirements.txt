@@ -1,0 +1,11 @@
+langgraph 
+langchain 
+langchain-google-genai
+langchain-community 
+streamlit 
+python-dotenv
+youtube-transcript-api 
+tavily-python
+sqlalchemy
+langchain-openai
+chromadb

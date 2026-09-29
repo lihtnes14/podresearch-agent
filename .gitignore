@@ -1,0 +1,22 @@
+# Virtual environments
+.venv/
+venv/
+
+# Environment variables
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Chroma / vector database
+chroma_db/
+
+# macOS
+.DS_Store
