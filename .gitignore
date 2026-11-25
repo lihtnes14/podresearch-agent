@@ -37,4 +37,4 @@ chroma_db/
 # macOS
 .DS_Store
 
-.github/workflow
+.github/workflows
