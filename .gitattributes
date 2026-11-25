@@ -1,0 +1,3 @@
+# Include frontend source code in GitHub language statistics
+frontend/**/*.js linguist-language=JavaScript linguist-vendored=false linguist-generated=false linguist-documentation=false
+frontend/**/*.jsx linguist-language=JavaScript linguist-vendored=false linguist-generated=false linguist-documentation=false
