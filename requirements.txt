@@ -9,3 +9,7 @@ tavily-python
 sqlalchemy
 langchain-openai
 chromadb
+fastapi
+uvicorn[standard]
+pydantic
+httpx

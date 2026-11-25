@@ -1,0 +1,114 @@
+{
+  "timestamp": "2026-11-05T14:13:34.833072+00:00",
+  "composite_score": 97.75,
+  "all_passed": true,
+  "metrics": {
+    "faithfulness": {
+      "total_statements": 4,
+      "grounded_statements": 4,
+      "ungrounded_statements": 0,
+      "faithfulness_score": 1.0,
+      "overall_score": 1.0,
+      "passed": true,
+      "ungrounded_claims": []
+    },
+    "answer_relevancy": {
+      "total_topics": 4,
+      "topics_covered": 3,
+      "topic_coverage_rate": 0.75,
+      "total_key_points": 4,
+      "key_points_covered": 4,
+      "key_point_rate": 1.0,
+      "relevancy_score": 0.85,
+      "overall_score": 0.85,
+      "passed": true,
+      "uncovered_topics": [
+        "CloudScale Hosting Sponsorship"
+      ]
+    },
+    "revision_success_rate": {
+      "total_cases": 1,
+      "successful_revisions": 1,
+      "revision_success_rate": 1.0,
+      "total_initial_violations": 1,
+      "total_remaining_violations": 0,
+      "violation_reduction_rate": 1.0,
+      "overall_score": 1.0,
+      "passed": true,
+      "details": [
+        {
+          "case_id": "revision_case_quote_repair",
+          "initial_violations": 1,
+          "revised_violations": 0,
+          "is_repaired": true
+        }
+      ]
+    },
+    "precision": {
+      "overall_score": 1.0,
+      "passed": true,
+      "details": "TP: 3, FP: 0"
+    },
+    "recall": {
+      "overall_score": 1.0,
+      "passed": true,
+      "details": "TP: 3, FN: 0"
+    },
+    "guardrail_precision_recall": {
+      "true_positives": 3,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "total_injected_defects": 3,
+      "clean_articles_tested": 1,
+      "clean_articles_passed": 1,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "overall_score": 1.0,
+      "passed": true
+    },
+    "end_to_end_latency": {
+      "total_pipeline_latency_seconds": 19.62,
+      "sla_compliance_rate": 1.0,
+      "overall_score": 1.0,
+      "passed": true,
+      "node_breakdown": {
+        "transcript": {
+          "latency_seconds": 1.45,
+          "sla_threshold_seconds": 5.0,
+          "within_sla": true
+        },
+        "chunking": {
+          "latency_seconds": 0.12,
+          "sla_threshold_seconds": 1.0,
+          "within_sla": true
+        },
+        "analysis": {
+          "latency_seconds": 4.8,
+          "sla_threshold_seconds": 10.0,
+          "within_sla": true
+        },
+        "research": {
+          "latency_seconds": 6.25,
+          "sla_threshold_seconds": 15.0,
+          "within_sla": true
+        },
+        "writer": {
+          "latency_seconds": 4.1,
+          "sla_threshold_seconds": 10.0,
+          "within_sla": true
+        },
+        "guardrail": {
+          "latency_seconds": 2.9,
+          "sla_threshold_seconds": 8.0,
+          "within_sla": true
+        },
+        "total_pipeline": {
+          "latency_seconds": 19.62,
+          "sla_threshold_seconds": 60.0,
+          "within_sla": true
+        }
+      }
+    }
+  }
+}

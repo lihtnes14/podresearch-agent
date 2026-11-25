@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "podresearch-agent"
+version = "1.0.0"
+description = "Autonomous Multi-Agent Podcast Research & Journalism System"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langgraph",
+    "langchain",
+    "langchain-openai",
+    "fastapi",
+    "uvicorn[standard]",
+    "pydantic",
+    "httpx",
+    "sqlalchemy",
+    "chromadb",
+    "tavily-python",
+    "youtube-transcript-api",
+    "python-dotenv",
+    "streamlit",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "evals"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+norecursedirs = ["tests/manual", ".venv", "chroma_db"]
+pythonpath = ["."]
+addopts = "-v --tb=short"
+markers = [
+    "unit: Fast isolated unit tests without external API dependencies",
+    "integration: Live integration tests with external services",
+]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+    "ignore::ResourceWarning",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+exclude = [
+    ".venv",
+    "chroma_db",
+    "tests/manual",
+    "__pycache__",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E501"]
+

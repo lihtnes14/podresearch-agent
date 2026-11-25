@@ -1,22 +1,38 @@
 # Virtual environments
 .venv/
 venv/
+ENV/
 
-# Environment variables
+# Environment variables (credentials & API keys)
 .env
+*.env
+backend/.env
+
+# Node & Frontend build
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+.vite/
 
 # Python
 __pycache__/
 *.py[cod]
 *.pyo
 
-# Databases
+# Databases & local sessions
 *.db
 *.sqlite
 *.sqlite3
+data/
+backend/data/
 
 # Chroma / vector database
 chroma_db/
+
+# Testing & Coverage
+.deepeval/
+.pytest_cache/
 
 # macOS
 .DS_Store
